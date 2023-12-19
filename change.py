@@ -10,7 +10,7 @@ from dateutil import parser
 
 sub.getoutput("timedatectl set-ntp false")
 sub.getoutput('sudo timedatectl set-time "1999-01-01 10:13:13"')
-source_file = "test.txt"
+source_file = input("file: ")
 try:
     with open(source_file, 'rb') as file:
         content = file.read()
